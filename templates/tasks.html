@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <title>Lista Compiti</title>
+    </head>
+
+<!-- BACKGROUND -->
+    <body style="
+    background-color:#82d2e3;
+    ">
+        <!-- TITOLO -->
+        <h1 style="
+        color:black; 
+        text-align:center;
+        font-size:40px;
+        padding-top:20px;
+        font-weight:bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        ">
+            LISTA COMPITI
+        </h1>
+
+        <HR>
+        <!-- CONTENITORE PER LE TASK -->
+        <ul id="taskList"
+        style="
+        color: black;
+        font-family: Inter, system-ui, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        ">
+        </ul>
+
+        <script src="/static/tasks.js"></script>
+
+        <p style="
+        display:inline-block; 
+        vertical-align:bottom;
+        margin-top:150px;
+        font-size:14px;
+        color:black;
+        font-family: 'Alcantara Road' , sans-serif;
+        ">
+        </p>
+
+        <!-- PULSANTE INDIETRO -->
+        <button onclick="history.back()" 
+        style="
+        position:absolute;
+        top:10px;
+        left:10px;
+        padding:8px 14px;
+        border:none;
+        border-radius:8px;
+        background:black;
+        color:white;
+        cursor:pointer;
+        ">
+            ← Indietro
+        </button>
+
+        <!-- DATA DI OGGI -->
+        <p id="data"></p>
+
+        <script>
+        document.getElementById("data").innerHTML =
+        new Date().toLocaleDateString("it-IT");
+        </script>
+
+        <style id="nl8m1w">
+        #data{
+        position:absolute;
+        top:10px;
+        right:20px;
+        font-size:30px;
+        }
+        </style>
+
+        <!-- SITE BY -->
+        <p style="
+        position:absolute;
+        bottom:0px;
+        left:750px;
+        font-size:15px;
+        color:black;
+        ">
+            Site by 
+            <a href="https://github.com/jacopo-nesti" style="font-size:15px; color:black;"> Jacopo </a> 
+        </p>
+
+    </body>
+</html>
