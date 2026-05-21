@@ -10,20 +10,16 @@
 ## Struttura progetto
 
 checkmate/
-│
 ├── app.py
 ├── database/
-│ └── tasks.db (creato automaticamente)
-│
+│   └── tasks.db (creato automaticamente)
 ├── static/
-│ ├── .png
-│ ├── tasks.js
-│ └── style.css
-│
+│   ├── .png
+│   ├── tasks.js
+│   └── style.css
 ├── templates/
-│ ├── index.html
-│ ├── tasks.html
-│
+│   ├── index.html
+│   └── tasks.html
 ├── requirements.txt
 ├── .gitignore
 ├── README.md
