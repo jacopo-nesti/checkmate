@@ -1,9 +1,10 @@
+```markdown id="fixbadge"
 CHECKMATE - Gestore Compiti Personale
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Flask](https://img.shields.io/badge/Flask-web%20framework-black)
 ![SQLite](https://img.shields.io/badge/SQLite-database-lightgrey)
-![Frontend](https://img.shields.io/badge/HTML%2FCSS%2FJS-frontend-orange)
+![HTML](https://img.shields.io/badge/HTML-CSS-orange)
 
 ---
 
