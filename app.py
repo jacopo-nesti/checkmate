@@ -5,9 +5,7 @@ import os
 app = Flask(__name__)
 
 # DATABASE
-os.makedirs("database", exist_ok=True)
-db_path = os.path.join("database", "tasks.db")
-conn = sqlite3.connect(db_path)
+db_path = checkmate/database/tasks.db
 
 # HOME
 @app.route("/")
