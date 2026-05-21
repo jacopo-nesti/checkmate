@@ -1,10 +1,13 @@
 from flask import Flask, request, render_template
 import sqlite3
+import os
 
 app = Flask(__name__)
 
 # DATABASE
-db_path = "C:/Users/jnest/OneDrive/Desktop/PROGETTI PERSONALI/easy_task_manager/database/tasks.db"
+os.makedirs("database", exist_ok=True)
+db_path = os.path.join("database", "tasks.db")
+conn = sqlite3.connect(db_path)
 
 # HOME
 @app.route("/")
