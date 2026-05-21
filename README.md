@@ -7,26 +7,6 @@
 
 ---
 
-## Struttura progetto
-
-checkmate/
-├── app.py
-├── database/
-│   └── tasks.db (creato automaticamente)
-├── static/
-│   ├── .png
-│   ├── tasks.js
-│   └── style.css
-├── templates/
-│   ├── index.html
-│   └── tasks.html
-├── requirements.txt
-├── .gitignore
-├── README.md
-└── LICENSE.md
-
----
-
 ## Descrizione del progetto
 
 CheckMate è una semplice web app per la gestione di compiti personali.
