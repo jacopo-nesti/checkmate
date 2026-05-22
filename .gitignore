@@ -9,8 +9,7 @@ __pycache__/
 *.pyo
 
 # Database
-database/*.db
-!database/.gitkeep
+*.db
 
 # IDE
 .vscode/
