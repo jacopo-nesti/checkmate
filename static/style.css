@@ -1,0 +1,174 @@
+/* SFONDO PAGINA */
+body {
+    background-color: #82d2e3;
+}
+
+/* TITOLO PRINCIPALE */
+h1 {
+    color:black; 
+    text-align:center;
+    font-size:40px;
+    padding-top:20px;
+    font-weight:bold;
+    font-family:'Segoe UI', sans-serif;
+}
+
+/* DATA IN ALTO A DESTRA */
+#data {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+}
+
+/* IMMAGINE PROCRASTINATION */
+.procrastination-img {
+  border-radius: 20px;
+  float: left;
+  margin-right: 40px;
+}
+
+/* TESTO "COSA HAI DA FARE OGGI?" */
+.add-task-text {
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:25px;
+    margin-top: 25px;
+    font-size:30px;
+}
+
+/* FORM CONTAINER INPUT TASK */
+.form-write-here {
+    display:inline-block; 
+    vertical-align:middle;
+}
+
+/* INPUT TASK (FOCUS STYLE) */
+.form-input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    text-align: center;
+    color:black;
+    font-size:14px;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+}
+
+/* BOTTONE AGGIUNGI TASK */
+.button-add-task {
+    cursor:pointer;
+    margin-left:10px;
+    color:rgb(45, 171, 13);
+    font-size:14px;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+}
+
+/* TESTO SEZIONE VISUALIZZA TASK */
+.show-task {
+    display:inline-block;
+    color:black;
+    vertical-align:middle;
+    margin-right:45px;
+    margin-top:45px;
+    font-size:30px;
+}
+
+/* BOTTONE VISUALIZZA TASK */
+.button-show-task {
+    display:inline-block;
+    vertical-align:middle; 
+    color:green;
+    cursor:pointer;
+    margin-left:-3px;
+    margin-top:20px;
+    font-size:16px;
+    padding:14px;
+    border-radius:10px;
+    border:none;
+}
+
+/* AFORISMA CASUALE */
+#aforisma {
+  margin-top: 200px;
+  font-size: 16px;
+  color: black;
+  font-family: "Alcantara Road", sans-serif;
+}
+
+/* BOTTONE NUOVO AFORISMA */
+.button-aforisma {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background: white;
+}
+
+/* LINK GENERICO */
+.link {
+    margin-right:0px;
+    margin-top:-200px;
+}
+
+/* LINK CHATGPT */
+.link-chatgpt {
+  font-size: 18px;
+  color: black;
+}
+
+/* CREDIT FOOTER CENTRATO */
+.site-credit {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+}
+
+/* LINK FOOTER */
+.site-link {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+/* LISTA TASK */
+#taskList {
+  color: black;
+  font-family: Inter, system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* TESTO FOOTER SECONDARIO */
+.footer-text {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 150px;
+  font-size: 14px;
+  color: black;
+  font-family: "Alcantara Road", sans-serif;
+}
+
+/* PULSANTE INDIETRO */
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* HOVER PULSANTE INDIETRO */
+.back-button:hover {
+  opacity: 0.8;
+}

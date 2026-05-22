@@ -51,7 +51,6 @@ async function loadTasks() {
             }
         };
 
-
         li.appendChild(editButton);  // aggiunge bottone edit dentro <li>
         li.appendChild(deleteButton);  // aggiunge bottone delete dentro <li>
         taskList.appendChild(li);  // aggiunge <li> alla lista

@@ -6,89 +6,43 @@
     </head>
 
 <!-- BACKGROUND -->
-    <body style="
-    background-color:#82d2e3;
-    ">
+    <body>
+        <link rel="stylesheet" href="static\style.css">
+    </body>
+
         <!-- TITOLO -->
-        <h1 style="
-        color:black; 
-        text-align:center;
-        font-size:40px;
-        padding-top:20px;
-        font-weight:bold;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        ">
+        <h1 link rel="stylesheet" href="static\style.css">
             LISTA COMPITI
         </h1>
 
         <HR>
-        <!-- CONTENITORE PER LE TASK -->
-        <ul id="taskList"
-        style="
-        color: black;
-        font-family: Inter, system-ui, sans-serif;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        ">
-        </ul>
-
-        <script src="/static/tasks.js"></script>
-
-        <p style="
-        display:inline-block; 
-        vertical-align:bottom;
-        margin-top:150px;
-        font-size:14px;
-        color:black;
-        font-family: 'Alcantara Road' , sans-serif;
-        ">
-        </p>
 
         <!-- PULSANTE INDIETRO -->
-        <button onclick="history.back()" 
-        style="
-        position:absolute;
-        top:10px;
-        left:10px;
-        padding:8px 14px;
-        border:none;
-        border-radius:8px;
-        background:black;
-        color:white;
-        cursor:pointer;
-        ">
+        <button class="back-button" onclick="history.back()">
             ← Indietro
         </button>
 
+        <!-- CONTENITORE PER LE TASK -->
+        <ul id="taskList"></ul>
+
+        <!-- SCRIPT -->
+        <script src="{{ url_for('static', filename='tasks.js') }}" defer></script>
+
+        <!-- FOOTER / TESTO FINALE -->
+        <p class="footer-text"></p>
+
         <!-- DATA DI OGGI -->
         <p id="data"></p>
-
-        <script>
-        document.getElementById("data").innerHTML =
-        new Date().toLocaleDateString("it-IT");
-        </script>
-
-        <style id="nl8m1w">
-        #data{
-        position:absolute;
-        top:10px;
-        right:20px;
-        font-size:30px;
-        }
-        </style>
+        <script src="static\script.js" defer></script>
+        <link rel="stylesheet" href="static\style.css">
 
         <!-- WEB SITE BY -->
-        <p style="
-        position:absolute;
-        bottom:0px;
-        left:750px;
-        font-size:15px;
-        color:black;
-        ">
-            Web Site by 
-            <a href="https://github.com/jacopo-nesti" style="font-size:15px; color:black;"> Jacopo </a> 
-        </p>
+        <footer class="site-credit">
+            Web Site by
+            <a class="site-link" href="https://github.com/jacopo-nesti">
+                Jacopo
+            </a>
+        </footer>
 
     </body>
 </html>

@@ -6,187 +6,80 @@
     </head>
 
     <!-- BACKGROUND -->
-    <body style="
-    background-color:#82d2e3;
-    ">
+    <body>
+        <link rel="stylesheet" href="static\style.css">
+    </body>
+
         <!-- TITOLO -->
-        <h1 style="
-        color:black; 
-        text-align:center;
-        font-size:40px;
-        padding-top:20px;
-        font-weight:bold;
-        font-family:'Segoe UI', sans-serif;
-        ">
+        <h1>
+            <link rel="stylesheet" href="static\style.css">
             CHECKMATE - GESTORE COMPITI PERSONALE
         </h1>
 
         <!-- DATA DI OGGI -->
         <p id="data"></p>
-
-        <script>
-        document.getElementById("data").innerHTML =
-        new Date().toLocaleDateString("it-IT");
-        </script>
-
-        <style id="nl8m1w">
-        #data{
-        position:absolute;
-        top:10px;
-        right:20px;
-        font-size:30px;
-        }
-        </style>
+        <script src="static\script.js" defer></script>
+        <link rel="stylesheet" href="static\style.css">
 
         <HR>
 
         <!-- IMMAGINE -->
-        <img 
-        src="{{ url_for('static', filename='procrastination.png') }}" 
-        width="800" 
-        height="480" 
-        style="
-        border-radius:20px;
-        float:left;
-        margin-right:40px;
-        ">
+       <img class="procrastination-img"
+        src="{{ url_for('static', filename='procrastination.png') }}"
+        width="800"
+        height="480">
 
         <!-- CONTENUTO ADD TASK -->
-        <p style="
-        display:inline-block;
-        vertical-align:middle;
-        margin-right:25px;
-        margin-top: 25px;
-        font-size:30px;">
+        <p class="add-task-text">
             Cosa hai da fare oggi?
         </p>
 
-        <form style="display:inline-block; vertical-align:middle;">
-            <input 
+        <form class="form-write-here">
+            <input class="form-input"
             type="text"
             id="taskInput"
-            placeholder="scrivi qui..."
-            style="
-            text-align: center;
-            color:black;
-            font-size:14px;
-            padding:12px;
-            border-radius:10px;
-            border:none;
-            ">
+            placeholder="scrivi qui...">
         </form>
 
-        <button onclick="addTask()"
-            style="
-            cursor:pointer;
-            margin-left:10px;
-            color:rgb(45, 171, 13);
-            font-size:14px;
-            padding:12px;
-            border-radius:10px;
-            border:none;
-        ">
+        <button class="button-add-task"
+            onclick="addTask()">
             Clicca per inviare
         </button>
 
-        <script src="/static/tasks.js"></script>
+        <script src="{{ url_for('static', filename='tasks.js') }}" defer></script>
 
          <!-- CONTENUTO SHOW TASK -->
-        <p style="
-        display:inline-block;
-        vertical-align:middle;
-        margin-right:45px;
-        margin-top:45px;
-        font-size:30px;">
+        <p class="show-task">
             Vedi cosa devi fare...
         </p>
 
-        <button style="display:inline-block; vertical-align:middle; 
-        color:black;
-        margin-left:-3px;
-        margin-top:20px;
-        font-size:16px;
-        padding:14px;
-        border-radius:10px;
-        border:none;
-        ">
-            <a href="http://127.0.0.1:5000/tasks" style="color:rgb(45, 171, 13);"> Visualizza i tuoi compiti </a> 
+        <button class="button-show-task" onclick="window.location.href='/tasks'">
+            Visualizza i tuoi compiti
         </button>
 
         <!-- AFORISMA CASUALE -->
-        <p id="aforisma" style="
-        margin-right:0px;
-        margin-top:200px;
-        font-size:16px;
-        color:black;
-        font-family: 'Alcantara Road' , sans-serif;
-        ">
+        <p id="aforisma">
             Clicca qui per un aforisma casuale!
         </p>
 
-        <button onclick="nuovoAforisma()" style="cursor:pointer;">Nuovo aforisma</button>
-
-        <script> 
-       const aforismi = 
-       [
-            "La procrastinazione è l’arte di tenere il passo con ieri.",
-            "Non rimandare a domani ciò che il tuo futuro ti sta già rimproverando oggi.",
-            "Il tempo non aspetta chi lo spreca aspettando il momento giusto.",
-            "La procrastinazione è un debito che si paga con stress.",
-            "Ogni minuto rimandato diventa un’ora di pressione futura.",
-            "Non è mancanza di tempo, è mancanza di priorità.",
-            "Domani è il luogo preferito dei sogni mai realizzati.",
-            "Chi rimanda oggi, rincorre sempre domani.",
-            "La motivazione arriva dopo l’inizio, non prima.",
-            "La procrastinazione trasforma piccoli compiti in grandi problemi.",
-            "Il segreto per iniziare è smettere di aspettare di essere pronti.",
-            "Rimandare è facile, ma recuperare costa il doppio.",
-            "Il futuro ringrazia chi agisce nel presente.",
-            "Non aspettare il momento perfetto: il momento perfetto non arriva.",
-            "Ogni compito evitato torna più pesante."
-        ];
-        function nuovoAforisma() 
-        {
-        const index = Math.floor(Math.random() * aforismi.length);
-        document.getElementById("aforisma").textContent = aforismi[index];
-        }
-        </script>
+        <button class="button-aforisma" onclick="nuovoAforisma()">
+            Nuovo aforisma
+        </button>
 
         <!-- LINK -->
-        <p style="
-        margin-right:0px;
-        margin-top:-200px;
-        ">
-            <a href="https://chatgpt.com/" 
-            style="
-            font-size:18px;
-            color:black;
-            ">
+        <p class="link">
+            <a class="link-chatgpt" href="https://chatgpt.com/">
                 Se hai dubbi, chiedi a me!<BR>E non procrastinare dell'altro...
             </a>
         </p>
 
-        <!--WEB SITE BY -->
-        <p style="
-        position:absolute;
-        bottom:0px;
-        left:750px;
-        font-size:15px;
-        color:black;
-        ">
-            Web Site by 
-            <a href="https://github.com/jacopo-nesti" style="font-size:15px; color:black;"> Jacopo </a> 
-        </p>
-
-        <p style="
-        position: fixed;
-        bottom: 0px;
-        right: 20px;">
-        Per problemi scrivere a: 
-        <a href="mailto:j.nesti@hotmail.it">
-        j.nesti@hotmail.it
-        </a>
-        </p>
+        <!-- WEB SITE BY -->
+        <footer class="site-credit">
+            Web Site by
+            <a class="site-link" href="https://github.com/jacopo-nesti">
+                Jacopo
+            </a>
+        </footer>
 
     </body>
 
