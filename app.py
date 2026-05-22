@@ -6,6 +6,22 @@ app = Flask(__name__)
 # DATABASE
 db_path = r"C:\Users\jnest\OneDrive\Desktop\PROGETTI PERSONALI\easy_task_manager\database\tasks.db"
 
+def init_db():
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS tasks (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT NOT NULL,
+        completed INTEGER DEFAULT 0,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )
+    """)
+
+    conn.commit()
+    conn.close()
+
 # HOME
 @app.route("/")
 def landing():
@@ -78,4 +94,5 @@ def delete_task(id):
 
 # START SERVER
 if __name__ == "__main__":
+    init_db()
     app.run(debug=True)
