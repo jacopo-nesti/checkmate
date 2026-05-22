@@ -91,4 +91,3 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file `LICENSE` per i detta
 - Stato completamento compiti (checkbox “fatto/non fatto”)
 - Aggiungere un calendario interattivo
 - Migliorare UI/UX
-- Separazione HTML e CSS
