@@ -1,12 +1,18 @@
 from flask import Flask, request, render_template
 import sqlite3
+import os
 
 app = Flask(__name__)
 
-# DATABASE
-db_path = r"C:\Users\jnest\OneDrive\Desktop\PROGETTI PERSONALI\easy_task_manager\database\tasks.db"
+# Crea il percorso relativo alla cartella del progetto
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_DIR = os.path.join(BASE_DIR, "database")
+db_path = os.path.join(DB_DIR, "tasks.db")
 
 def init_db():
+    # Crea la cartella database se non esiste
+    os.makedirs(DB_DIR, exist_ok=True)
+    
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 

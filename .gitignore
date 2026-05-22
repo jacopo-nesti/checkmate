@@ -3,13 +3,14 @@ venv/
 myenv/
 .env/
 
-# Python cache
+# Python
 __pycache__/
 *.pyc
 *.pyo
 
 # Database
-*.db
+database/*.db
+database/*.db-journal
 *.sqlite3
 instance/
 
