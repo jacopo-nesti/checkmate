@@ -10,9 +10,7 @@ __pycache__/
 
 # Database
 database/*.db
-database/*.db-journal
-*.sqlite3
-instance/
+!database/.gitkeep
 
 # IDE
 .vscode/
