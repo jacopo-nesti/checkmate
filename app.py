@@ -28,6 +28,9 @@ def init_db():
     conn.commit()
     conn.close()
 
+# Crea cartella e tabella anche con "flask run" (non solo python app.py)
+init_db()
+
 # HOME
 @app.route("/")
 def landing():
