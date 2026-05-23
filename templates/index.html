@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html>
 
-    <head> 
-        <title>CheckMate - Gestore compiti </title>
-    </head>
+<head>
+    <title>CheckMate - Gestore compiti</title>
 
-    <!-- BACKGROUND -->
-    <body>
-        <link rel="stylesheet" href="static\style.css">
-    </body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-        <!-- TITOLO -->
-        <h1>
-            <link rel="stylesheet" href="static\style.css">
+</head>
+
+<body class="body">
+
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    
+    <script src="{{ url_for('static', filename='tasks.js') }}" defer></script>
+
+    <div class="container">
+
+        <h1 class="title">
             CHECKMATE - GESTORE COMPITI PERSONALE
         </h1>
 
         <!-- DATA DI OGGI -->
-        <p id="data"></p>
-        <script src="static\script.js" defer></script>
-        <link rel="stylesheet" href="static\style.css">
+        <p class="data"></p>
 
-        <HR>
+        <hr>
 
-        <!-- IMMAGINE -->
-       <img class="procrastination-img"
-        src="{{ url_for('static', filename='procrastination.png') }}"
-        width="800"
-        height="480">
-
-        <!-- CONTENUTO ADD TASK -->
-        <p class="add-task-text">
+        <!-- ADD TASK -->
+        <p class="text">
             Cosa hai da fare oggi?
         </p>
 
-        <form class="form-write-here">
-            <input class="form-input"
-            type="text"
-            id="taskInput"
-            placeholder="scrivi qui...">
+        <form class="task-form">
+            <input
+                class="form-input"
+                type="text"
+                id="taskInput"
+                placeholder="scrivi qui..."
+            >
         </form>
 
-        <button class="button-add-task"
-            onclick="addTask()">
+        <button class="button" onclick="addTask()">
             Clicca per inviare
         </button>
 
-        <script src="{{ url_for('static', filename='tasks.js') }}" defer></script>
-
-         <!-- CONTENUTO SHOW TASK -->
-        <p class="show-task">
+        <!-- CONTENUTO SHOW TASK -->
+        <p class="text">
             Vedi cosa devi fare...
         </p>
 
-        <button class="button-show-task" onclick="window.location.href='/tasks'">
+        <button class="button" onclick="window.location.href='/tasks'">
             Visualizza i tuoi compiti
         </button>
 
         <!-- AFORISMA CASUALE -->
-        <p id="aforisma">
-            Clicca qui per un aforisma casuale!
+        <p class="aforisma">
+            Clicca qua sotto per una nuova frase motivazionale!
         </p>
 
-        <button class="button-aforisma" onclick="nuovoAforisma()">
-            Nuovo aforisma
+        <button class="button" onclick="nuovoAforisma()">
+            Nuova Motivazione
         </button>
 
         <!-- LINK -->
         <p class="link">
             <a class="link-chatgpt" href="https://chatgpt.com/">
-                Se hai dubbi, chiedi a me!<BR>E non procrastinare dell'altro...
+                Se hai dubbi, chiedi a me!<br>
+                E non procrastinare dell'altro...
             </a>
         </p>
 
@@ -81,6 +77,8 @@
             </a>
         </footer>
 
-    </body>
+    </div>
+
+</body>
 
 </html>

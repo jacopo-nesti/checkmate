@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html>
 
-    <head> 
-        <title>Lista Compiti</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- BACKGROUND -->
-    <body>
-        <link rel="stylesheet" href="static\style.css">
-    </body>
+    <title>Lista Compiti</title>
 
-        <!-- TITOLO -->
-        <h1 link rel="stylesheet" href="static\style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <script src="{{ url_for('static', filename='tasks.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body class="background">
+
+    <main class="container">
+
+        <!-- TITLE -->
+        <h1 class="title">
             LISTA COMPITI
         </h1>
 
-        <HR>
+        <p class="data" id="data"></p>
 
-        <!-- PULSANTE INDIETRO -->
+        <hr class="divider">
+
+        <!-- BACK BUTTON -->
         <button class="back-button" onclick="history.back()">
             ← Indietro
         </button>
 
-        <!-- CONTENITORE PER LE TASK -->
-        <ul id="taskList"></ul>
+        <!-- TASK LIST -->
+        <ul id="taskList" class="task-list"></ul>
 
-        <!-- SCRIPT -->
-        <script src="{{ url_for('static', filename='tasks.js') }}" defer></script>
-
-        <!-- FOOTER / TESTO FINALE -->
-        <p class="footer-text"></p>
-
-        <!-- DATA DI OGGI -->
-        <p id="data"></p>
-        <script src="static\script.js" defer></script>
-        <link rel="stylesheet" href="static\style.css">
-
-        <!-- WEB SITE BY -->
+        <!-- FOOTER -->
         <footer class="site-credit">
             Web Site by
             <a class="site-link" href="https://github.com/jacopo-nesti">
@@ -44,5 +42,8 @@
             </a>
         </footer>
 
-    </body>
+    </main>
+
+</body>
+
 </html>
