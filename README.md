@@ -87,7 +87,18 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file `LICENSE` per i detta
 
 ## Possibili sviluppi futuri
 
-- Priorità dei compiti
+- Implementazione priorità dei compiti
+- Ordinamento delle task in base alla priorità
+- Unificazione di homepage e lista compiti in un’unica pagina
 - Stato completamento compiti (checkbox “fatto/non fatto”)
 - Aggiungere un calendario interattivo
-- Migliorare UI/UX
+- Drag & drop per riordinare task
+- Tag o categorie (studio, lavoro, personale)
+
+---
+
+## Aggiornamenti
+
+- Migliorata UI/UX in chiave moderna
+- Separazione tra file HTML e CSS
+- Aggiunta data nella homepage
