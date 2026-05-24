@@ -11,13 +11,16 @@ html, body {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    min-height: 100vh;
 }
 
 /* CONTAINER */
 .container {
     width: 100%;
     max-width: 720px;
+    overflow: visible;
     background: white;
     border-radius: 24px;
     padding: 28px;
@@ -58,6 +61,11 @@ body {
     align-items: center;
 }
 
+/* TASK ITEM con menu aperto */
+.task-list li:has(.priority-menu:not(.hidden)) {
+    z-index: 100;
+}
+
 /* INPUT */
 .form-input {
     flex: 1;
@@ -87,6 +95,17 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s;
+}
+
+.task-feedback {
+    margin: 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .button:hover {
@@ -135,6 +154,7 @@ body {
 
 /* TASK LIST */
 .task-list {
+    overflow: visible;
     list-style: none;
     padding: 0;
     margin: 24px 0;
@@ -146,6 +166,7 @@ body {
 /* TASK ITEM */
 .task-list li {
     background: white;
+    position:relative;
     border: 1px solid #e5e7eb;
     border-radius: 16px;
     padding: 14px 16px;
@@ -165,4 +186,85 @@ body {
 .task-list li.done {
     opacity: 0.5;
     text-decoration: line-through;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+.edit-btn {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.edit-btn:hover {
+    background: #16a34a;
+}
+
+.priority-btn {
+    background: #f59e0b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.priority-btn:hover {
+    background: #d97706;
+}
+
+.priority-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.priority-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.priority-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.priority-item:hover {
+    background: #f3f4f6;
+}
+
+.hidden {
+    display: none;
 }

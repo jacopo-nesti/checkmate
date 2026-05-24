@@ -28,3 +28,7 @@ function nuovoAforisma() {
   const index = Math.floor(Math.random() * aforismi.length);
   document.querySelector(".aforisma").textContent = aforismi[index];
 }
+
+// Se `script.js` viene caricato come module, l'HTML non vede le funzioni
+// chiamate via onclick="...". Esponiamo quella usata dalla pagina.
+window.nuovoAforisma = nuovoAforisma;

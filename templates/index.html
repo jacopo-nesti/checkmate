@@ -5,14 +5,14 @@
     <title>CheckMate - Gestore compiti</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+    <script src="{{ url_for('static', filename='script.js') }}" type="module"></script>
+    <script src="{{ url_for('static', filename='tasks.js') }}" type="module"></script>
+    <script src="{{ url_for('static', filename='buttons.js') }}" type="module"></script>
 
 </head>
 
 <body class="body">
-
-    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
-    
-    <script src="{{ url_for('static', filename='tasks.js') }}" defer></script>
 
     <div class="container">
 
@@ -42,6 +42,8 @@
         <button class="button" onclick="addTask()">
             Clicca per inviare
         </button>
+
+        <p id="taskFeedback" class="task-feedback" hidden aria-live="polite"></p>
 
         <!-- CONTENUTO SHOW TASK -->
         <p class="text">

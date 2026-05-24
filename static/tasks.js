@@ -1,12 +1,15 @@
+import { createDeleteButton, createEditButton, createPriorityButton } from "./buttons.js";
+
 // quando la pagina è pronta, carica le task
 window.onload = loadTasks;
 
 // LOAD TASKS
 async function loadTasks() {
+    const taskList = document.getElementById("taskList");
+    if (!taskList) return;
+
     const response = await fetch("/api/tasks"); // richiesta GET al backend
     const data = await response.json();  // converte risposta in JSON
-    const taskList = document.getElementById("taskList");  // prende contenitore HTML
-
     taskList.innerHTML = "";  // Pulisce la lista prima di ridisegnarla (evito duplicati)
 
     // Ciclo sulle task ricevute dal backend
@@ -14,46 +17,16 @@ async function loadTasks() {
         const li = document.createElement("li");  // crea elemento <li>
         li.textContent = task.title;  // testo task
         
-        // QUI AGGIUNGO BOTTONE DELETE
-        const deleteButton = document.createElement("button");  // creo bottone delete
-        deleteButton.textContent = "Elimina";  // testo del bottone
-        // stile semplice del bottone
-        deleteButton.style.backgroundColor = "red";
-        deleteButton.style.color = "white";
-        deleteButton.style.border = "2px solid #000000";
-        deleteButton.style.padding = "5px";
-        deleteButton.style.borderRadius = "5px";
-        deleteButton.style.cursor = "pointer";
-        deleteButton.style.marginLeft = "12px";
+        // Container bottoni
+        const actions = document.createElement("div");
+        actions.classList.add("actions");
 
-        // quando clicco elimina parte la funzione deleteTask passando l'id specifico della task
-        deleteButton.onclick = function() {
-            deleteTasks(task.id);
-        };
+        actions.appendChild(createPriorityButton(task));
+        actions.appendChild(createEditButton(task, loadTasks));
+        actions.appendChild(createDeleteButton(task, loadTasks));
 
-        // QUI AGGIUNGO BOTTONE EDIT TASKS
-        const editButton = document.createElement("button");
-        editButton.textContent = "Modifica";
-        // stile semplice del bottone
-        editButton.style.backgroundColor = "green";
-        editButton.style.color = "black";
-        editButton.style.border = "2px solid #000000";
-        editButton.style.padding = "5px";
-        editButton.style.borderRadius = "5px";
-        editButton.style.cursor = "pointer";
-        editButton.style.marginLeft = "12px";
-
-        // quando clicco modifica parte la funzione editTask passando l'id specifico della task
-        editButton.onclick = function() {
-            const newText = prompt("Modifca la task:", task.title);
-            if (newText && newText.trim() !== "") {
-                updateTask(task.id, newText);
-            }
-        };
-
-        li.appendChild(editButton);  // aggiunge bottone edit dentro <li>
-        li.appendChild(deleteButton);  // aggiunge bottone delete dentro <li>
-        taskList.appendChild(li);  // aggiunge <li> alla lista
+        li.appendChild(actions);
+        taskList.appendChild(li);
     });
 }
 
@@ -64,10 +37,15 @@ async function addTask() {
     const input = document.getElementById("taskInput");
 
     // prende testo scritto
-    const title = input.value;
+    const title = input.value.trim();
+
+    if (!title) {
+        alert("Inserisci un titolo per il tuo compito!");
+        return;
+    }
     
     // manda richiesta POST al backend
-    await fetch("/api/tasks", {
+    const res = await fetch("/api/tasks", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -77,10 +55,41 @@ async function addTask() {
         })
     });
 
-    // svuota input dopo invio
+    if (!res.ok) {
+        let details = "";
+        try {
+            details = await res.text();
+        } catch {
+            // ignore
+        }
+        throw new Error(`Errore creazione task (${res.status}). ${details}`);
+    }
+
     input.value = "";
-    alert("Task aggiunta con successo!");
+    showTaskFeedback("Task aggiunta con successo!");
+
+    const taskList = document.getElementById("taskList");
+    if (taskList) await loadTasks();
 }
+
+function showTaskFeedback(message) {
+    const el = document.getElementById("taskFeedback");
+    if (!el) {
+        alert(message);
+        return;
+    }
+    el.textContent = message;
+    el.hidden = false;
+    clearTimeout(el._hideTimer);
+    el._hideTimer = setTimeout(() => {
+        el.hidden = true;
+        el.textContent = "";
+    }, 4000);
+}
+
+// `tasks.js` è caricato come <script type="module">: per usarla da onclick=""
+// dobbiamo esporla sul global `window`.
+window.addTask = addTask;
 
 // DELETE TASK
 async function deleteTasks(id) {
