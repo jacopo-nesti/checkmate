@@ -100,17 +100,15 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file [LICENSE](/LICENSE.md
 
 ##  Aggiornamenti futuri
 
-```text
--[x] Migliorata UI/UX in chiave moderna
--[x] Separazione tra file HTML e CSS
--[x] Aggiunta data nella homepage
--[] Implementazione priorità dei compiti
--[] Ordinamento delle task in base alla priorità
--[] Unificazione di homepage e lista compiti in un’unica pagina
--[] Stato completamento compiti (checkbox “fatto/non fatto”)
--[] Aggiungere un calendario interattivo
--[] Drag & drop per riordinare task
--[] Tag o categorie (studio, lavoro, personale)
-```
+-[x] Migliorata UI/UX in chiave moderna  
+-[x] Separazione tra file HTML e CSS  
+-[x] Aggiunta data nella homepage  
+-[] Implementazione priorità dei compiti  
+-[] Ordinamento delle task in base alla priorità  
+-[] Unificazione di homepage e lista compiti in un’unica pagina  
+-[] Stato completamento compiti (checkbox “fatto/non fatto”)  
+-[] Aggiungere un calendario interattivo  
+-[] Drag & drop per riordinare task  
+-[] Tag o categorie (studio, lavoro, personale)  
 
 ---
