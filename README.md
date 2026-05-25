@@ -34,10 +34,10 @@ attraverso la realizzazione di una web app completa.
 
 ## Tecnologie utilizzate
 
-- ** Backend: ** Python, Flask
-- ** Database: ** SQLite (sqlite3)
-- ** Frontend: ** HTML, CSS, JavaScript
-- ** Tool di supporto: ** DB Browser for SQLite (solo fase iniziale)
+- *Backend:* Python, Flask
+- *Database:* SQLite (sqlite3)
+- *Frontend:* HTML, CSS, JavaScript
+- *Tool di supporto:* DB Browser for SQLite (solo fase iniziale)
 
 ---
 
@@ -73,10 +73,10 @@ http://127.0.0.1:5000/
 
 ## Esempio di utilizzo
 
-Avvia l'app  
-Aggiungi un nuovo compito  
-Visualizza la lista dei compiti  
-Modifica o elimina un compito
+- Avvia l'app  
+- Aggiungi un nuovo compito  
+- Visualizza la lista dei compiti  
+- Modifica o elimina un compito
 
 ---
 
@@ -105,7 +105,7 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file `LICENSE` per i detta
 
 ---
 
-## Aggiornamenti
+## Aggiornamenti passati
 
 - Migliorata UI/UX in chiave moderna
 - Separazione tra file HTML e CSS
