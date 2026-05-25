@@ -100,6 +100,7 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file [LICENSE](/LICENSE.md
 
 ##  Aggiornamenti futuri
 
+```text
 -[x] Migliorata UI/UX in chiave moderna
 -[x] Separazione tra file HTML e CSS
 -[x] Aggiunta data nella homepage
@@ -110,5 +111,6 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file [LICENSE](/LICENSE.md
 -[] Aggiungere un calendario interattivo
 -[] Drag & drop per riordinare task
 -[] Tag o categorie (studio, lavoro, personale)
+```
 
 ---
