@@ -54,7 +54,7 @@ checkmate/
 ## Obiettivo del progetto
 
 Il progetto è stato sviluppato a scopo didattico/formativo per il corso   
-** IFTS Software Developer (FISM FORMAZIONE) **  
+**IFTS Software Developer (FISM FORMAZIONE)**  
 L'obiettivo è comprendere le relazione tra:
 - Database
 - Backend
