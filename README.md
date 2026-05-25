@@ -21,7 +21,7 @@ L'utente può:
 
 ---
 
-## Struttura
+## Struttura del progetto
 
 checkmate/
 ├── README.md
@@ -42,7 +42,7 @@ checkmate/
 │   └── buttons.js
 │
 ├── database/
-    └── tasks.db
+│   └── tasks.db
 
 ---
 
