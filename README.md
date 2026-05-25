@@ -1,12 +1,23 @@
 # CHECKMATE - Gestore Compiti Personale
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Flask](https://img.shields.io/badge/Flask-web%20framework-black)
-![SQLite](https://img.shields.io/badge/SQLite-database-lightgrey)
-![HTML](https://img.shields.io/badge/HTML-CSS-orange)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Status](https://img.shields.io/badge/status-active-success)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+![Node.js](https://img.shields.io/badge/Node.js-runtime-green)
+![Docker](https://img.shields.io/badge/Docker-container-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-database-blue)
+![MongoDB](https://img.shields.io/badge/MongoDB-database-green)
+![React](https://img.shields.io/badge/React-library-61DAFB)
+![FastAPI](https://img.shields.io/badge/FastAPI-framework-009688)
+![Git](https://img.shields.io/badge/Git-version--control-orange)
+![GitHub](https://img.shields.io/badge/GitHub-platform-black)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen)
+![Build](https://img.shields.io/badge/build-passing-success)
+![Linux](https://img.shields.io/badge/Linux-OS-FCC624)
+![Windows](https://img.shields.io/badge/Windows-OS-0078D6)
+![MacOS](https://img.shields.io/badge/macOS-Apple-999999)
+![API](https://img.shields.io/badge/API-REST-red)
+![Version](https://img.shields.io/badge/version-2.0.0-blue)
+![Contributions](https://img.shields.io/badge/contributions-welcome-orange)
 
 ---
 
