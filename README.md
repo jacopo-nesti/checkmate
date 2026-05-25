@@ -34,10 +34,10 @@ attraverso la realizzazione di una web app completa.
 
 ## Tecnologie utilizzate
 
-- *Backend:* Python, Flask
-- *Database:* SQLite (sqlite3)
-- *Frontend:* HTML, CSS, JavaScript
-- *Tool di supporto:* DB Browser for SQLite (solo fase iniziale)
+- Backend: *Python, Flask*
+- Database: *SQLite (sqlite3)*
+- Frontend: *HTML, CSS, JavaScript*
+- Tool di supporto: *DB Browser for SQLite (solo fase iniziale)*
 
 ---
 
