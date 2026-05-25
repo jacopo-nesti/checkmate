@@ -27,6 +27,7 @@ L'utente può:
 
 ```text
 checkmate/
+│
 ├── README.md
 ├── INSTALLAZIONE.md
 ├── requirements.txt
@@ -45,7 +46,7 @@ checkmate/
 │   └── buttons.js
 │
 ├── database/
-│   └── tasks.db
+    └── tasks.db
 ```
 
 ---
