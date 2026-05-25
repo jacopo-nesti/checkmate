@@ -23,6 +23,7 @@ L'utente può:
 
 ## Struttura del progetto
 
+```text
 checkmate/
 ├── README.md
 ├── INSTALLAZIONE.md
@@ -43,6 +44,7 @@ checkmate/
 │
 ├── database/
 │   └── tasks.db
+```
 
 ---
 
