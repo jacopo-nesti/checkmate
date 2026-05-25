@@ -4,18 +4,45 @@
 ![Flask](https://img.shields.io/badge/Flask-web%20framework-black)
 ![SQLite](https://img.shields.io/badge/SQLite-database-lightgrey)
 ![HTML](https://img.shields.io/badge/HTML-CSS-orange)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ---
 
 ## Descrizione del progetto
 
-CheckMate è una semplice web app per la gestione di compiti personali.
+CheckMate è una semplice web app per la gestione di compiti personali.  
 L'utente può:
-- Aggiungere nuovi compiti
-- Salvare i dati in un database locale
-- Visualizzare i compiti salvati,
-- Modificare il titolo dei compiti
-- Eliminare i compiti
+
+- ✅ Aggiungere nuovi compiti
+- ✅ Salvare i dati in un database locale
+- ✅ Visualizzare i compiti salvati,
+- ✅ Modificare il titolo dei compiti
+- ✅ Eliminare i compiti
+
+---
+
+## Struttura
+
+checkmate/
+├── README.md
+├── INSTALLAZIONE.md
+├── requirements.txt
+├── .gitignore
+├── LICENSE.md
+├── app.py
+│
+├── templates/
+│   ├── index.html
+│   └── tasks.html
+│
+├── static/
+│   ├── style.css
+│   ├── script.js
+│   ├── tasks.js
+│   └── buttons.js
+│
+├── database/
+    └── tasks.db
 
 ---
 
@@ -69,20 +96,17 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file [LICENSE](/LICENSE.md
 
 ---
 
-## Possibili sviluppi futuri
+##  Aggiornamenti futuri
 
-- Implementazione priorità dei compiti
-- Ordinamento delle task in base alla priorità
-- Unificazione di homepage e lista compiti in un’unica pagina
-- Stato completamento compiti (checkbox “fatto/non fatto”)
-- Aggiungere un calendario interattivo
-- Drag & drop per riordinare task
-- Tag o categorie (studio, lavoro, personale)
+-[x] Migliorata UI/UX in chiave moderna
+-[x] Separazione tra file HTML e CSS
+-[x] Aggiunta data nella homepage
+-[] Implementazione priorità dei compiti
+-[] Ordinamento delle task in base alla priorità
+-[] Unificazione di homepage e lista compiti in un’unica pagina
+-[] Stato completamento compiti (checkbox “fatto/non fatto”)
+-[] Aggiungere un calendario interattivo
+-[] Drag & drop per riordinare task
+-[] Tag o categorie (studio, lavoro, personale)
 
 ---
-
-## Aggiornamenti passati
-
-- Migliorata UI/UX in chiave moderna
-- Separazione tra file HTML e CSS
-- Aggiunta data nella homepage
