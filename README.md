@@ -89,7 +89,7 @@ http://127.0.0.1:5000/
 
 ## Licenza
 
-Questo progetto è rilasciato sotto licenza MIT. Vedi file [LICENSE](docs/LICENSE.md) per i dettagli.
+Questo progetto è rilasciato sotto licenza MIT. Vedi file [LICENSE](/LICENSE.md) per i dettagli.
 
 ---
 
