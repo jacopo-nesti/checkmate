@@ -1,4 +1,4 @@
-## CHECKMATE - Gestore Compiti Personale
+# CHECKMATE - Gestore Compiti Personale
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Flask](https://img.shields.io/badge/Flask-web%20framework-black)
