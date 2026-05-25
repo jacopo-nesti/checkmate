@@ -24,4 +24,4 @@ python app.py
 ```
 
 ## 5. Nel browser
-http://127.0.0.1:5000/
+Copiare questo URL nel proprio browser --> http://127.0.0.1:5000/
