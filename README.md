@@ -91,7 +91,6 @@ Leggi la [guida per l'installazione](/INSTALLAZIONE.md) per i dettagli.
 ## Autori
 
 - Jacopo Nesti
-- Corso IFTS Software Developer - FISM FORMAZIONE
 
 ---
 
