@@ -17,7 +17,7 @@ L'utente può:
 
 - ✅ Aggiungere nuovi compiti
 - ✅ Salvare i dati in un database locale
-- ✅ Visualizzare i compiti salvati,
+- ✅ Visualizzare i compiti salvati
 - ✅ Modificare il titolo dei compiti
 - ✅ Eliminare i compiti
 
