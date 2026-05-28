@@ -100,21 +100,27 @@ Questo progetto è rilasciato sotto licenza MIT. Vedi file [LICENSE](/LICENSE.md
 
 ---
 
-##  Aggiornamenti futuri
+## Aggiornamenti futuri
 
-- [x] Migliorata UI/UX in chiave moderna  
-- [x] Separazione tra file HTML e CSS  
-- [x] Aggiunta data nella homepage
+### ✅ Attuale
+- [x] CRUD tasks
+- [x] Database SQLite
+- [x] Base Flask app
+- [x] UI/UX migliorata in chiave moderna
+- [x] Separazione tra file HTML e CSS
 ---
+### 🔐 In sviluppo
 - [ ] Register utenti
 - [ ] Login utenti
 - [ ] Logout utenti
-- [ ] Protezione route con login_required
+- [ ] Protezione route con `login_required`
 ---
-- [ ] Implementazione priorità dei compiti  
-- [ ] Ordinamento delle task in base alla priorità 
-- [ ] Aggiungere un calendario interattivo  
-- [ ] Drag & drop per riordinare task  
-- [ ] Tag o categorie (studio, lavoro, personale)  
-
----
+### 🧠 Futuro
+- [ ] Associazione task → utente
+- [ ] Implementazione priorità dei compiti
+- [ ] Ordinamento task per priorità
+- [ ] Calendario interattivo
+- [ ] Drag & drop per riordinare task
+- [ ] Tag o categorie (studio, lavoro, personale)
+- [ ] UI/UX completamente rinnovata (frontend moderno)
+- [ ] Storico delle task completate
