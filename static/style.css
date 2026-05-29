@@ -268,3 +268,39 @@ body {
 .hidden {
     display: none;
 }
+
+/* AUTH (login / register) */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+}
+
+.auth-form .form-input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-form .button {
+    width: 100%;
+}
+
+/* link stile bottone (first.html usa <a class="button">) */
+a.button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* indietro / azione secondaria */
+.button-secondary {
+    background: white;
+    color: #4f46e5;
+    border: 2px solid #6366f1;
+}
+
+.button-secondary:hover {
+    background: #eef2ff;
+    box-shadow: 0 8px 18px rgba(99, 102, 241, 0.15);
+}

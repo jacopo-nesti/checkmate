@@ -1,7 +1,9 @@
 // DATA DI OGGI
 
-document.querySelector(".data").textContent =
-  new Date().toLocaleDateString("it-IT");
+const dataEl = document.querySelector(".data");
+if (dataEl) {
+  dataEl.textContent = new Date().toLocaleDateString("it-IT");
+}
 
 
 // AFORISMA CASUALE

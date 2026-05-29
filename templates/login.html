@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='login.js') }}" type="module"></script>
+    <title>Login - CheckMate</title>
+</head>
+<body class="body">
+    <div class="container">
+
+        <h1 class="title">Login - Accedi al tuo profilo</h1>
+
+        <p class="text">Inserisci username e password per continuare</p>
+
+        <hr class="title">
+
+        <form id="login-form" class="auth-form">
+            <input
+                class="form-input"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+                autocomplete="username"
+                required
+            >
+            <input
+                class="form-input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                autocomplete="current-password"
+                required
+            >
+            <button class="button" type="submit">Accedi</button>
+        </form>
+
+        <hr>
+
+        <p class="text">Prima volta su CheckMate?</p>
+        <a class="button" href="/register">Registrati</a>
+
+        <p class="text">Torna alla home</p>
+        <a class="button button-secondary" href="/">← Indietro</a>
+
+        <footer class="site-credit">
+            Web Site by
+            <a class="site-link" href="https://github.com/jacopo-nesti">
+                Jacopo
+            </a>
+        </footer>
+
+    </div>
+</body>
+</html>

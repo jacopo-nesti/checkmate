@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
-    <title>CheckMate - Gestore compiti</title>
-
+    <title>CheckMate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    
     <script src="{{ url_for('static', filename='script.js') }}" type="module"></script>
     <script src="{{ url_for('static', filename='tasks.js') }}" type="module"></script>
-    <script src="{{ url_for('static', filename='buttons.js') }}" type="module"></script>
-
 </head>
 
 <body class="body">
-
     <div class="container">
 
-        <h1 class="title">
-            CHECKMATE - GESTORE COMPITI PERSONALE
-        </h1>
+        <h1 class="title">Benvenuto {{ current_user.username }}</h1>
 
-        <!-- DATA DI OGGI -->
         <p class="data"></p>
 
         <hr>
 
-        <!-- ADD TASK -->
-        <p class="text">
-            Cosa hai da fare oggi?
-        </p>
+        <p class="text">Cosa hai da fare oggi?</p>
 
         <form class="task-form">
             <input
@@ -39,31 +30,29 @@
             >
         </form>
 
-        <button class="button" onclick="addTask()">
+        <button class="button" type="button" onclick="addTask()">
             Clicca per inviare
         </button>
 
         <p id="taskFeedback" class="task-feedback" hidden aria-live="polite"></p>
 
-        <!-- CONTENUTO SHOW TASK -->
-        <p class="text">
-            Vedi cosa devi fare...
-        </p>
+        <p class="text">Vedi cosa devi fare...</p>
 
-        <button class="button" onclick="window.location.href='/tasks'">
+        <button class="button" type="button" onclick="window.location.href='/tasks'">
             Visualizza i tuoi compiti
         </button>
 
-        <!-- AFORISMA CASUALE -->
         <p class="aforisma">
             Clicca qua sotto per una nuova frase motivazionale!
         </p>
 
-        <button class="button" onclick="nuovoAforisma()">
+        <button class="button" type="button" onclick="nuovoAforisma()">
             Nuova Motivazione
         </button>
 
-        <!-- LINK -->
+        <p class="text">Già ci abbandoni?</p>
+        <a class="button" href="/logout">Logout</a>
+
         <p class="link">
             <a class="link-chatgpt" href="https://chatgpt.com/">
                 Se hai dubbi, chiedi a me!<br>
@@ -71,7 +60,6 @@
             </a>
         </p>
 
-        <!-- WEB SITE BY -->
         <footer class="site-credit">
             Web Site by
             <a class="site-link" href="https://github.com/jacopo-nesti">
@@ -80,7 +68,6 @@
         </footer>
 
     </div>
-
 </body>
 
 </html>
