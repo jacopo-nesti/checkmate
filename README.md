@@ -31,19 +31,6 @@ L'applicazione consente di:
 
 ---
 
-## Obiettivo del progetto
-
-Il progetto è stato sviluppato a scopo didattico/formativo per il corso   
-**IFTS Software Developer (FISM FORMAZIONE)**  
-L'obiettivo è comprendere le relazioni tra:
-- Database
-- Backend
-- Frontend
-
-attraverso la realizzazione di una web app completa.
-
----
-
 ## Funzionalità
 
 - Registrazione utenti

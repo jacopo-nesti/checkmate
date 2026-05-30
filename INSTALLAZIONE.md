@@ -2,15 +2,23 @@
 
 ## 1. Clona il repository
 ```bash
-git clone https://github.com/jacopo-nesti/checkmate.git  
+git clone https://github.com/jacopo-nesti/checkmate.git
 cd checkmate
 ```
 
 ## 2. Crea ambiente virtuale
 ```bash
-python -m venv venv  
-source venv/bin/activate   # Mac/Linux  
-venv\Scripts\activate      # Windows
+python -m venv venv
+```
+Attivalo:
+
+- Windows
+```bash
+venv\Scripts\activate
+```
+- Mac/Linux
+```bash
+source venv/bin/activate
 ```
 
 ## 3. Installa le dipendenze
@@ -24,4 +32,10 @@ python app.py
 ```
 
 ## 5. Nel browser
-Copiare questo URL nel proprio browser --> http://127.0.0.1:5000/
+Apri il browser e visita:  
+
+👉 http://127.0.0.1:5000/
+
+## Nota
+
+Il database SQLite viene creato automaticamente al primo avvio dell'applicazione.
